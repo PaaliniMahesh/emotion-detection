@@ -20,8 +20,6 @@ def get_image_base64(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode()
 
-st.image(r"C:\Users\mahes\OneDrive\Pictures\innomatcis logo.webp")
-
 # Set the title of the Streamlit app
 st.title("Emotion Detection")
 
