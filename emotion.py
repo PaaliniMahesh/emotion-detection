@@ -3,17 +3,17 @@ import pickle
 import base64
 
 # Load the trained model
-with open(r"C:\Users\mahes\phase 2 machine learning\model.pkl", 'rb') as model_file:
+with open(r"model.pkl", 'rb') as model_file:
     model = pickle.load(model_file)
 
 # Define the label to image path mapping
 label_to_image = {
-    "sad": r"C:\Users\mahes\OneDrive\Pictures\sad1.png",
-    "joy": r"C:\Users\mahes\OneDrive\Pictures\joy.png",
-    "love": r"C:\Users\mahes\OneDrive\Pictures\love.png",
-    "anger": r"C:\Users\mahes\OneDrive\Pictures\anger.png",
-    "fear": r"C:\Users\mahes\OneDrive\Pictures\fear.png",
-    "surprise": r"C:\Users\mahes\OneDrive\Pictures\surprise.png"
+    "sad": r"sad1.png",
+    "joy": r"joy.png",
+    "love": r"love.png",
+    "anger": r"anger.png",
+    "fear": r"fear.png",
+    "surprise": r"surprise.png"
 }
 
 def get_image_base64(image_path):
