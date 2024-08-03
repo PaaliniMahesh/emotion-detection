@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import base64
-
+st.image(r"innomatcis logo.webp")
 # Load the trained model
 with open(r"model.pkl", 'rb') as model_file:
     model = pickle.load(model_file)
